@@ -1,12 +1,6 @@
 import * as readlinePromises from 'node:readline/promises';
-import * as fs from 'node:fs';
 import { HANGMAN_UI } from "./graphics.mjs";
 import {ANSI} from "./ansi.mjs";
-
-const logging = fs.createWriteStream('hangman.log', { flags: 'a' });
-const log = (text) => {
-    logging.write(text + "\n");
-}
 
 const rl = readlinePromises.createInterface({input: process.stdin,output: process.stdout});
 const WORD_LIST = ["car", "cat", "dog", "elephant", "fish", "giraffe", "horse", "monkey", "panda", "sheep", "tiger", "zebra", "ant","bee","marmelade","computer"];
@@ -17,8 +11,6 @@ const word = WORD_LIST[Math.floor(Math.random() * WORD_LIST.length)];
 const wordLength = word.length;
 const wordArray = word.split("");
 const wordDisplay = new Array(wordLength).fill("_");
-
-log("Word: " + word);
 
 const guesses = [];
 let isPlaing = true;
@@ -60,7 +52,6 @@ setTimeout(() => {
     write(ANSI.CURSOR_HOME);
     process.exit(0);
 }, 3000);
-
 
 
 function write(text) {
