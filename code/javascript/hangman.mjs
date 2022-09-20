@@ -1,8 +1,8 @@
 import * as fs from "node:fs"
 import * as readlinePromises from 'node:readline/promises';
+
 import { HANGMAN_UI } from "./graphics.mjs";
 import {ANSI} from "./ansi.mjs";
-
 
 const rl = readlinePromises.createInterface({input: process.stdin,output: process.stdout});
 
@@ -16,7 +16,7 @@ function logg(message){
 
 let atempts = 0;
 const MAX_ATEMPTS = HANGMAN_UI.length-1;
-const word = pickRandomWordFromList(WORD_LIST);
+const word = pickRandomItemFromList(WORD_LIST);
 const wordLength = word.length;
 const wordArray = word.split("");
 const wordDisplay = createWordDisplay();
@@ -74,7 +74,7 @@ function write(text) {
     process.stdout.write(text);
 }
 
-function pickRandomWordFromList(list){
+function pickRandomItemFromList(list){
     return list[Math.floor(Math.random() * WORD_LIST.length)];
 }
 
