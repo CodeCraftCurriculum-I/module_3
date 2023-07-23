@@ -1,14 +1,14 @@
 We're excited to introduce you to our third project, "Hangman". Building on the skills and concepts you've learned and applied in "Guess My Number" and "Rock, Paper, Scissors," this project introduces a greater focus on providing feedback to the player and refining your debugging skills.
 
-*Variables:* In "Hangman," variables play a crucial role, storing the secret word, the player's guesses, the current state of the word as guessed by the player, and the number of incorrect guesses.
+**Variables:** In "Hangman," variables play a crucial role, storing the secret word, the player's guesses, the current state of the word as guessed by the player, and the number of incorrect guesses.
 
-*Conditionals:* Conditionals guide the game flow in "Hangman." They are used to check whether a player's guess is in the secret word, whether the secret word has been fully revealed, or whether the maximum number of incorrect guesses has been reached.
+**Conditionals:** Conditionals guide the game flow in "Hangman." They are used to check whether a player's guess is in the secret word, whether the secret word has been fully revealed, or whether the maximum number of incorrect guesses has been reached.
 
-*Collections:* Collections come into play when we manage the player's guesses and form the word that gets revealed progressively to the player. You'll get to explore even more ways of using arrays in this project.
+**Collections:** Collections come into play when we manage the player's guesses and form the word that gets revealed progressively to the player. You'll get to explore even more ways of using arrays in this project.
 
-*Loops:* Loops drive the gameplay, allowing the game to continue until the player successfully guesses the word or the maximum number of incorrect guesses has been exceeded.
+**Loops:** Loops drive the gameplay, allowing the game to continue until the player successfully guesses the word or the maximum number of incorrect guesses has been exceeded.
 
-*Functions:* Functions will be utilized extensively to break down the game into manageable tasks, such as checking the player's guess, updating the current state of the word, and determining the game's end condition.
+**Functions:** Functions will be utilized extensively to break down the game into manageable tasks, such as checking the player's guess, updating the current state of the word, and determining the game's end condition.
 
 In addition to these core concepts, "Hangman" provides a great opportunity to enhance the player's experience by providing meaningful feedback. It could be informing the player about the incorrect guess, updating them on their current progress, or celebrating their victory.
 
